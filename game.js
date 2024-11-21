@@ -169,7 +169,7 @@ async function makeApiCall(action) {
         });
 
         const rawResponse = await response.json();
-         console.log(rawResponse);
+        console.log(rawResponse);
         return JSON.parse(rawResponse.result.content.value);
     } catch (error) {
         console.error("API call failed:", error);
