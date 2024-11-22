@@ -167,7 +167,7 @@ async function makeApiCall(action) {
                 tactic_id: TACTIC_ID,
             }),
         });
-
+        console.log(response);
         const rawResponse = await response.json();
         console.log(rawResponse);
         return JSON.parse(rawResponse.result.content.value);
